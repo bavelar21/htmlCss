@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"></html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+   
+    <div class="cadastro">
+        <h1>Formulário para cadastro</h1>
+        <form>
+            Nome: <input type="text" name="nome">
+            <p></p>
+            E-mail: <input type="email" name="email">
+            <p></p>
+            Número para contato: <input type="number" name="numero">
+            <p></p>
+            Data de nascimento: <input type="date" name="data">
+            <p></p>
+            Sexo:
+            <input type="radio" name="select"> 
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="select">
+            <label for="feminino">Feminino</label>
+            <p></p>
+            <label for="periodo">Período</label>
+            <select name="periodo">
+                <option value="1">Selecione</option>
+                <option value="2">Manhã</option>
+                <option value="3">Tarde</option>
+                <option value="4">Noite</option>
+            </select>
+
+            <p></p>
+            <input type="submit" value="Enviar Dados">
+            <p></p>
+            
+        </form>
+    </div>
+   
+</body>
+</html>

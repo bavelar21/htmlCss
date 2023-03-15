@@ -1,0 +1,17 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(225, 225, 225);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cadastro {
+    text-align: center;
+}
+
+.cadastro label {
+    color: rgb(0, 0, 0);
+}
