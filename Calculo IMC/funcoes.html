@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+<script>
+    //Definindo a função
+    function primeira(){
+        console.log('Esse código foi inserido pela função')
+    }
+
+    //Executando a função
+    primeira();
+
+    //Definindo função com passagem de parâmetro
+    function segunda(parametro1){
+        console.log('O valor do parametro1 é: ' + parametro1);
+    }
+    //Executando a função com passagem de 1 parâmetro
+    let variavel1 = 'Melancia';
+    segunda(variavel1);
+
+    //Definindo função com mais de 1 parâmetro
+    function terceira(valor1, valor2){
+        let total = (valor1 + valor2);
+        console.log('Total: ' + total);
+        
+    }
+    //Executando função com mais de 1 parâmetro
+    terceira(100, 500);
+
+    function quarta(valor1, valor2){
+        let total = (valor1 - valor2);
+        return total;
+    }
+
+    let varRetorno = quarta(500, 100);
+    console.log('Valor retornado: ' + varRetorno);
+
+    function soma(valor1, valor2){
+        return valor1 + valor2;
+    }
+
+    function subtrai(valor1, valor2){
+        return valor1 - valor2;
+    }
+
+    //Alinhamento de funções
+    function calculo(tipo, valorA, valorB){
+        if(tipo == '+'){
+            console.log('Total: ' + soma (valorA, valorB));
+        }else if(tipo == '-'){
+            console.log('Total: ' + subtrai (valorA, valorB));
+        }else{
+            console.log('Desculpa, operação não permitida.')
+        }
+    }
+
+    let vl1 = 80, vl2 = 20;
+    calculo('+', vl1,vl2);
+
+    calculo('-', vl1, vl2);
+
+    calculo('/', vl1, vl2);
+
+    function funcao_x(pr1){
+        console.log('Valor de p1: ' + pr1);
+    }
+
+    funcao_x(123);
+
+    //Camel case
+    //esseÉUmExemploDeTextoEscritoEmCamelCase
+    function executaXVezes(quantidade){
+        if(quantidade > 0 && quantidade < 1000){
+            for(let i = 1; i <= quantidade; i++){
+                console.log('Execução número: ' + i);
+            }
+        }
+    }
+
+    executaXVezes(50);
+
+</script>
+
+</head>
+<body>
+    <h1>Funções</h1>
+</body>
+</html>

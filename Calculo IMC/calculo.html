@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+
+    <script>
+        var altura, peso;
+
+        function calculaValorIMC(alturaInformada, pesoInformado){
+            return peso / (altura * altura);
+        }
+
+        function calculaIMC(alt, pes){
+            let valorIMC = calculaValorIMC(alt, pes);
+
+            console.log('Valor do IMC é: ' + valorIMC);
+
+            if(valorIMC < 18.5){
+                console.log('Abaixo do peso ideal!');
+            }else if(valorIMC >= 18.5 && valorIMC < 25){
+                console.log('Peso Ideal!');
+            }else if(valorIMC >= 25 && valorIMC < 30){
+                console.log('Sobrepeso!');
+            }else if(valorIMC >= 30){
+                console.log('Obesidade!')
+            }else{
+                console.log('Não foi possível calcular o IMC!')
+            }
+
+        }
+
+        //altura = 1.70;
+        //peso = 72;
+
+        //calculaIMC(altura, peso);
+
+        function calculaIMCRemoto(){
+            let altInformada = document.getElementById('altura').value;
+            let pesInformado = document.getElementById('peso').value;
+
+            console.log('..:: Calculando IMC ::..');
+            calculaIMC(altInformada, pesInformado);
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>Calculo de IMC</h1>
+    <input type="text" id="altura" placeholder="Altura em cm">
+    <input type="text" id="peso" placeholder="Peso em Kg">
+
+    <button type="submit" onclick="calculaIMCRemoto()">Calcular</button>
+</body>
+</html>
